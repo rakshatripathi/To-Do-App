@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #17181b, #0b649b);
+    padding: 10px;
+}
+
+
+.todo-app{
+    width: 100%;
+    max-width: 540px;
+    background: linear-gradient(250deg, #e2e6ef, #97eae8);
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+
+.todo-app h2{
+    color: #002765;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between ;
+    background: #071b1d44;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-weight: 14px;
+}
+
+button{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background:#1c5464;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+ul li {
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor:pointer;
+    background-color: aliceblue;
+    border-radius: 30px;
+    margin: 10px;
+}
+
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+
+ul li.checked::before{
+    background-image: url(images/checked.png);
+
+}
+
+.listItem {
+    display: flex;
+    justify-content: space-around;
+}
+
+ul li span:hover{
+    background: #112a74;
+    color: #fff;
+}
+
+@media screen and (max-width: 280px) {
+    .row{
+        display: flex;
+        flex-direction: column;
+        border-radius: 0px;
+        text-align: right;
+        align-items:flex-end;
+        margin: 10px;
+        background: transparent;
+        padding-left: 10px;
+        max-width: fit-content;
+    }
+
+    input{
+        margin: 0;
+        background: #edeef0;
+        border-radius: 30px;
+    }
+    
+    button{
+        padding: 10px 30px;
+        font-size: 10px;
+        align-items:stretch;
+        align-self: right;
+    }
+    
+    .todo-app{
+        max-width: 100%;
+        padding: 20px 15px 35px;
+    }
+}
+
+
+
+
+
+
+
+
